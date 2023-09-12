@@ -1,0 +1,90 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+
+    text-decoration: none;
+}
+
+nav{
+    text-align: center;
+
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 10px;
+}
+
+nav ul li{
+
+    display: inline-block;
+   
+    position: relative;
+    
+   
+}
+
+nav ul li a{
+
+   
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding:15px 22px;
+    display: block;
+    transition: 0.4s;
+
+}
+
+
+nav ul li:hover>a{
+
+    background-color: rgb(56, 132, 20);
+}
+
+nav ul li .submenu{
+
+    position: absolute;
+    background-color: rgb(44, 21, 21);
+    text-align: left;
+    border: 1px solid #e50b0b;
+    border-top: 4px solid #e51818;
+    width: 220px;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 50px;
+   transition: 0.5s;
+    
+   
+}
+
+nav ul li:hover>.submenu {
+
+   
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+nav ul li .submenu li{
+
+    display: block;
+    border-bottom: 1px solid #ff1111;
+
+  
+ 
+}
+
+nav ul li .submenu .submenu{
+
+   left: 100%;
+   top: 0;
+}
+
